@@ -1,4 +1,4 @@
-Computes the set intersection-
+--Computes the set intersection-
 
 define SetIntersect datafu.pig.sets.SetIntersect();
 
@@ -14,7 +14,7 @@ intersected = FOREACH input {
 -- produces: ({(1),(4),(5)})
 DUMP intersected;
 
-Computes the set union-
+--Computes the set union-
 
 define SetUnion datafu.pig.sets.SetUnion();
 
@@ -26,7 +26,7 @@ unioned = FOREACH input GENERATE SetUnion(B1,B2);
 -- produces: ({(3),(4),(1),(2),(7),(5),(6),(0),(10)})
 DUMP unioned;
 
-Computes the set difference-
+--Computes the set difference-
 
 define SetDifference datafu.pig.sets.SetDifference();
 
