@@ -11,10 +11,10 @@ intersected = FOREACH input {
   GENERATE SetIntersect(sorted_b1,sorted_b2);
 }
 
-Computes the set union-
-
 -- produces: ({(1),(4),(5)})
 DUMP intersected;
+
+Computes the set union-
 
 define SetUnion datafu.pig.sets.SetUnion();
 
